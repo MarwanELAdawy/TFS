@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="VSIXInstaller..be5adcdc-8590-472d-be39-cb12a892deb8" Version="1.1.0.0" Language="en-US" Publisher="Mattias Sköld" />
+    <DisplayName>TFS 2012 Community Team Tools</DisplayName>
+    <Description xml:space="preserve">TFS 2012 Community Team Tools is a command line util to manage teams and team members. The project is based on the example code from ALM Rangers - Quick Response Sample Command line utility to manage TFS Teams </Description>
+    <MoreInfo>http://tfsteamtools.codeplex.com/</MoreInfo>
+    <Tags>TFS2012, Team</Tags>
+  </Metadata>
+  <Installation AllUsers="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="TfsTeams.exe" AssemblyName="TfsTeams, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+  </Assets>
+</PackageManifest>
